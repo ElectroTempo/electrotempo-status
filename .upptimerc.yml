@@ -13,10 +13,10 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
   baseUrl: /electrotempo-status
-  logoUrl: https://electro-tempo-resources.s3.amazonaws.com/logo/ElectroTempo+-+Favicon.png
+  logoUrl: "https://electro-tempo-resources.s3.amazonaws.com/logo/ElectroTempo+-+Favicon.png"
   name: ElectroTempo Status
   introTitle: "Welcome to ElectroTempo status page!"
-  introMessage: **Real-time** status from our [ElectroTempo Platform](https://electrotempo.net).
+  introMessage: "**Real-time** status from our [ElectroTempo Platform](https://electrotempo.net)."
   navbar:
     - title: Status
       href: /
