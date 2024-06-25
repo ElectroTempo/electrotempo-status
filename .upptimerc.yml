@@ -16,14 +16,14 @@ status-website:
   logoUrl: "https://media.licdn.com/dms/image/C4E0BAQG4nepOjpHIkA/company-logo_200_200/0/1643996190715/electrotempo_logo?e=2147483647&v=beta&t=yjqCLGM9xAvVmqzk1RZfNeqRxKwfSqmZmzMbaGvhJ80"
   name: ElectroTempo Status
   introTitle: "Welcome to ElectroTempo status page!"
-  introMessage: "**Real-time** status from our [ElectroTempo Platform]($ET_PLATFORM_URL)."
+  introMessage: "**Real-time** status from our [ElectroTempo Platform](https://electrotempo.net)."
   navbar:
     - title: Status
       href: /
     - title: Login
-      href: $ET_PLATFORM_URL
+      href: https://electrotempo.net
     - title: About
-      href: $ET_WEBSITE_URL
+      href: https://electrotempo.com
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
