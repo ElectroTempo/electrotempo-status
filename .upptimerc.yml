@@ -13,17 +13,17 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
   baseUrl: /electrotempo-status
-  logoUrl: "https://electro-tempo-resources.s3.amazonaws.com/logo/ElectroTempo+-+Favicon.png"
+  logoUrl: "https://media.licdn.com/dms/image/C4E0BAQG4nepOjpHIkA/company-logo_200_200/0/1643996190715/electrotempo_logo?e=2147483647&v=beta&t=yjqCLGM9xAvVmqzk1RZfNeqRxKwfSqmZmzMbaGvhJ80"
   name: ElectroTempo Status
   introTitle: "Welcome to ElectroTempo status page!"
-  introMessage: "**Real-time** status from our [ElectroTempo Platform](https://electrotempo.net)."
+  introMessage: "**Real-time** status from our [ElectroTempo Platform]($ET_PLATFORM_URL)."
   navbar:
     - title: Status
       href: /
     - title: Login
-      href: https://electrotempo.net
+      href: $ET_PLATFORM_URL
     - title: About
-      href: https://electrotempo.com
+      href: $ET_WEBSITE_URL
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
