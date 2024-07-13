@@ -5,19 +5,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "electo-tempo-frontend",
     "status": "up",
-    "uptime": "99.97%",
-    "uptimeDay": "99.55%",
-    "uptimeWeek": "99.94%",
-    "uptimeMonth": "99.97%",
-    "uptimeYear": "99.97%",
-    "time": 246,
-    "timeDay": 262,
-    "timeWeek": 246,
-    "timeMonth": 246,
-    "timeYear": 246,
-    "dailyMinutesDown": {
-      "2024-07-12": 7
-    }
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 242,
+    "timeDay": 261,
+    "timeWeek": 244,
+    "timeMonth": 242,
+    "timeYear": 242,
+    "dailyMinutesDown": {}
   },
   {
     "name": "ElectoTempo Backend",
@@ -30,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 223,
-    "timeDay": 321,
-    "timeWeek": 240,
-    "timeMonth": 223,
-    "timeYear": 223,
+    "time": 213,
+    "timeDay": 115,
+    "timeWeek": 225,
+    "timeMonth": 213,
+    "timeYear": 213,
     "dailyMinutesDown": {}
   }
 ]
