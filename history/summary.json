@@ -4,18 +4,20 @@
     "url": "$ET_FRONTEND_HEALTH_ENDPOINT",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "electo-tempo-frontend",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 237,
-    "timeDay": 188,
-    "timeWeek": 241,
-    "timeMonth": 240,
-    "timeYear": 237,
-    "dailyMinutesDown": {}
+    "time": 240,
+    "timeDay": 252,
+    "timeWeek": 259,
+    "timeMonth": 243,
+    "timeYear": 240,
+    "dailyMinutesDown": {
+      "2024-07-26": 0
+    }
   },
   {
     "name": "ElectoTempo Backend",
@@ -30,7 +32,7 @@
     "uptimeYear": "100.00%",
     "time": 220,
     "timeDay": 216,
-    "timeWeek": 232,
+    "timeWeek": 244,
     "timeMonth": 228,
     "timeYear": 220,
     "dailyMinutesDown": {}
