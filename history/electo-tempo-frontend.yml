@@ -1,7 +1,7 @@
 url: $ET_FRONTEND_HEALTH_ENDPOINT
-status: down
-code: 403
-responseTime: 195
-lastUpdated: 2024-09-03T03:49:46.751Z
+status: up
+code: 200
+responseTime: 179
+lastUpdated: 2024-09-03T04:05:40.889Z
 startTime: 2024-06-24T21:21:43.888Z
 generator: Upptime <https://github.com/upptime/upptime>
