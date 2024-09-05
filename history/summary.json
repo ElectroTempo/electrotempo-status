@@ -4,15 +4,15 @@
     "url": "$ET_FRONTEND_HEALTH_ENDPOINT",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "electo-tempo-frontend",
-    "status": "up",
-    "uptime": "94.68%",
-    "uptimeDay": "18.47%",
-    "uptimeWeek": "44.89%",
-    "uptimeMonth": "87.32%",
-    "uptimeYear": "94.68%",
+    "status": "down",
+    "uptime": "94.79%",
+    "uptimeDay": "19.20%",
+    "uptimeWeek": "46.06%",
+    "uptimeMonth": "87.59%",
+    "uptimeYear": "94.79%",
     "time": 210,
-    "timeDay": 208,
-    "timeWeek": 203,
+    "timeDay": 209,
+    "timeWeek": 204,
     "timeMonth": 207,
     "timeYear": 210,
     "dailyMinutesDown": {
@@ -21,7 +21,7 @@
       "2024-09-03": 1049,
       "2024-09-02": 1031,
       "2024-09-01": 1070,
-      "2024-08-31": 883
+      "2024-08-31": 765
     }
   },
   {
@@ -29,15 +29,15 @@
     "url": "$ET_BACKEND_HEALTH_ENDPOINT",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "electo-tempo-backend",
-    "status": "up",
-    "uptime": "94.68%",
-    "uptimeDay": "18.47%",
-    "uptimeWeek": "44.89%",
-    "uptimeMonth": "87.32%",
-    "uptimeYear": "94.68%",
+    "status": "down",
+    "uptime": "94.79%",
+    "uptimeDay": "19.20%",
+    "uptimeWeek": "46.06%",
+    "uptimeMonth": "87.59%",
+    "uptimeYear": "94.79%",
     "time": 193,
-    "timeDay": 179,
-    "timeWeek": 188,
+    "timeDay": 181,
+    "timeWeek": 189,
     "timeMonth": 191,
     "timeYear": 193,
     "dailyMinutesDown": {
@@ -46,7 +46,7 @@
       "2024-09-03": 1049,
       "2024-09-02": 1031,
       "2024-09-01": 1070,
-      "2024-08-31": 884
+      "2024-08-31": 766
     }
   }
 ]
