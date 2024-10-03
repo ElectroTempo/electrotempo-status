@@ -74,5 +74,5 @@ jobs:
           GH_REPO: ${{ github.repository }}
           ASSIGNEES: santhoshclx
           LABELS: maintenance,status
-          PINNED: true
+          PINNED: false
           CLOSE_PREVIOUS: false
