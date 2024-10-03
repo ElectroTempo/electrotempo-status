@@ -17,8 +17,8 @@ jobs:
         run: |
           # Get current date in desired format (e.g., 2024-09-30)
           CURRENT_DATE=$(date -u +"%Y-%m-%d")
-          START_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-          END_TIME=$(date -u -d "+2 hours" +"%Y-%m-%d %H:%M:%S UTC")
+          START_TIME=$(date -u +"%Y-%m-%dT%H:%M:%S%:z")
+          END_TIME=$(date -u -d "+2 hours" +"%Y-%m-%dT%H:%M:%S%:z")
 
           # Create issue body
           BODY="<!--
@@ -28,8 +28,8 @@ jobs:
           -->
           
           Maintenance Window:
-          - Start: $START_TIME
-          - End: $END_TIME
+          - Start: $CURRENT_DATE 16:00 UTC
+          - End: $CURRENT_DATE 18:00 UTC
           
           Affected Services:
           - Frontend Service
