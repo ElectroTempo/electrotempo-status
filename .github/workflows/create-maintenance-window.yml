@@ -1,0 +1,78 @@
+name: Create Maintenance Window
+
+on:
+  schedule:
+    - cron: '0 16 * * 1,4'
+
+# on: workflow_dispatch
+
+jobs:
+  create_issue:
+    name: Create Maintenance Window
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create Maintenance Window
+        run: |
+          # Get current date in desired format (e.g., 2024-09-30)
+          CURRENT_DATE=$(date -u +"%Y-%m-%d")
+          START_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          END_TIME=$(date -u -d "+2 hours" +"%Y-%m-%d %H:%M:%S UTC")
+
+          # Create issue body
+          BODY="<!--
+          start: $START_TIME
+          end: $END_TIME
+          expectedDown: electo-tempo-backend, electo-tempo-frontend
+          -->
+          
+          Maintenance Window:
+          - Start: $START_TIME
+          - End: $END_TIME
+          
+          Affected Services:
+          - Frontend Service
+          - Backend Service
+          
+          Impact:
+          - Users may experience downtime during the maintenance window.
+          
+          Reason:
+          - Releasing the new features and site maintenance.
+          
+          Contact:
+          - Support Team at helpdesk@electrotempo.com"
+          
+          # Add the current date to the issue title
+          TITLE="🚧 [Scheduled Maintenance] Site down for Maintenance ($CURRENT_DATE)"
+
+          if [[ $CLOSE_PREVIOUS == true ]]; then
+            previous_issue_number=$(gh issue list \
+              --label "$LABELS" \
+              --json number \
+              --jq '.[0].number')
+            if [[ -n $previous_issue_number ]]; then
+              gh issue close "$previous_issue_number"
+              gh issue unpin "$previous_issue_number"
+            fi
+          fi
+
+          # Ensure the title and body are properly passed to the gh issue create command
+          new_issue_url=$(gh issue create \
+            --title "$TITLE" \
+            --assignee "$ASSIGNEES" \
+            --label "$LABELS" \
+            --body "$BODY"
+          )
+          
+          if [[ $PINNED == true ]]; then
+            gh issue pin "$new_issue_url"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GIT_ACTION_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          ASSIGNEES: santhoshclx
+          LABELS: maintenance,status
+          PINNED: true
+          CLOSE_PREVIOUS: false
