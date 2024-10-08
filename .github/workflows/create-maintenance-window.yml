@@ -2,7 +2,7 @@ name: Create Maintenance Window
 
 on:
   schedule:
-    - cron: '00 16 * * 1,4'
+    - cron: '00 15 * * 1,4'
 
 # on: workflow_dispatch
 
@@ -17,8 +17,13 @@ jobs:
         run: |
           # Get current date in desired format (e.g., 2024-09-30)
           CURRENT_DATE=$(date -u +"%Y-%m-%d")
-          START_TIME=$(date -u +"%Y-%m-%dT%H:%M:%S%:z")
-          END_TIME=$(date -u -d "+2 hours" +"%Y-%m-%dT%H:%M:%S%:z")
+          
+          # START_TIME=$(date -u +"%Y-%m-%dT%H:%M:%S%:z")
+          # END_TIME=$(date -u -d "+2 hours" +"%Y-%m-%dT%H:%M:%S%:z")
+
+          # Concatenate CURRENT_DATE with the desired time strings
+          START_TIME="${CURRENT_DATE}T16:00:00+00:00"
+          END_TIME="${CURRENT_DATE}T18:00:00+00:00"
 
           # Create issue body
           BODY="<!--
