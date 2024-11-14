@@ -1,7 +1,7 @@
 url: $ET_FRONTEND_HEALTH_ENDPOINT
 status: up
 code: 200
-responseTime: 206
-lastUpdated: 2024-11-13T23:06:07.067Z
+responseTime: 180
+lastUpdated: 2024-11-14T23:06:22.730Z
 startTime: 2024-06-24T21:21:43.888Z
 generator: Upptime <https://github.com/upptime/upptime>
