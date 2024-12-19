@@ -1,7 +1,7 @@
 url: $ET_BACKEND_HEALTH_ENDPOINT
 status: up
 code: 200
-responseTime: 501
-lastUpdated: 2024-12-18T23:06:05.046Z
+responseTime: 242
+lastUpdated: 2024-12-19T23:06:01.942Z
 startTime: 2024-06-24T21:21:44.475Z
 generator: Upptime <https://github.com/upptime/upptime>
